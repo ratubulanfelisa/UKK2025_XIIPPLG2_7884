@@ -11,7 +11,7 @@
 
                 <?php
                     $query = mysqli_query($koneksi, "SELECT*FROM categories");
-                    while ($data = mysqli_fetch_array($query)){
+                    while($data = mysqli_fetch_array($query)){
 
                         ?>
                         <tr>
@@ -19,7 +19,7 @@
                             <td><?php echo $data['category']; ?></td>
                             <td><?php echo $data['user_id']; ?></td>
                             <td>
-                                <a href="?page=categories_hapus&&id=<?php echo $data['id']; ?>" class="btn btn-outline-danger">Hapus</a>
+                                <a href="?page=categories_hapus&&id=<?php echo $data['user_id']; ?>" class="btn btn-outline-danger">Hapus</a>
                             </td>
                         </tr>
                         <?php

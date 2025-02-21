@@ -19,33 +19,13 @@ include "koneksi.php";
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-light" style="background-color:white">
-        <section class="vh-100" style="background-color: white;">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col col-md-9 col-lg-7 col-xl-5">
-            <div>
-              <div class="d-flex align-items-center justify-content-between mb-3">
-              </div>
-            </div>
-            <div class="d-flex align-items-center mb-4">
-              <div class="flex-shrink-0">
-                <img src="cat.jpg"
-                  alt="Generic placeholder image" class="img-fluid rounded-circle border border-dark border-3"
-                  style="width: 70px;">
-              </div>
-              <div class="flex-grow-1 ms-3">
-                <div class="d-flex flex-row align-items-center mb-2">
-                  <p class="mb-0 me-2">ratubulan</p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-         
+    <nav class="sb-topnav navbar navbar-expand navbar-light" style="background-color:lightgrey
+    ">
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
@@ -58,6 +38,10 @@ include "koneksi.php";
                                 Home
                             </a>
                             <div class="sb-sidenav-menu-heading ">Navigation</div>
+                            <a class="nav-link" href="?page=profile">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Profile
+                            </a>
                             <a class="nav-link" href="?page=categories">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Categories
